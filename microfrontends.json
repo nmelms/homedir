@@ -1,0 +1,17 @@
+{
+  "$schema": "https://openapi.vercel.sh/microfrontends.json",
+  "applications": {
+    "homedir": {
+      "development": {
+        "fallback": "homedir.vercel.app"
+      }
+    },
+    "settingsdir": {
+      "routing": [
+        {
+          "paths": ["/settings", "/settings/:path*"]
+        }
+      ]
+    }
+  }
+}
